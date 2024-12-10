@@ -63,7 +63,7 @@ private:
         switch (binding.type) {
             case InputType::BUTTON:
                 return !binding.buttons.empty() && 
-                       controller_.get_digital(binding.buttons[0]);
+                       controller_.get_digital_new_press(binding.buttons[0]); // Changed to new_press
                 
             case InputType::BUTTON_COMBO: {
                 return std::all_of(binding.buttons.begin(), binding.buttons.end(),

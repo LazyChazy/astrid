@@ -6,6 +6,7 @@ void initialize() {
     // Configure the robot
     RobotConfig config;
     
+    
     // Configure chassis
     config.chassis.left_motor_ports = {11, 20};     // Left front and back
     config.chassis.right_motor_ports = {1, 10};    // Right front and back
